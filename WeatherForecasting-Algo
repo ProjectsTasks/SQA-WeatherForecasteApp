@@ -1,0 +1,16 @@
+The flowgraph for the weather forecasting app can be represented as follows:
+1.	Start
+2.	Check attempts > 0 && !isLoggedIn
+3.	Prompt for username
+4.	Prompt for password
+5.	Loop through login
+6.	if (login.username == username):
+o	True: Check switch (password == login.password)
+	Case true: Print "Login successful!", set isLoggedIn = true, End
+	Case false: Print "Invalid password", decrement attempts, go to Step 2
+o	False: Continue loop
+7.	if (!userFound):
+o	True: Print "User not found", decrement attempts, go to Step 2
+8.	if (attempts == 0):
+o	True: Print "No more attempts left", End
+o	False: Go to Step 2
