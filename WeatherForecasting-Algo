@@ -1,8 +1,8 @@
 The flowgraph for the weather forecasting app can be represented as follows:
 1.	Start
 2.	Check attempts > 0 && !isLoggedIn
-3.	Prompt for username
-4.	Prompt for password
+3.	ask for username
+4.	ask for password
 5.	Loop through login
 6.	if (login.username == username):
 o	True: Check switch (password == login.password)
